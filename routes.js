@@ -75,6 +75,7 @@ router.post('/updateMentor', (req, res) => {
 
 // Route to check and update mentor status to -1 if the mentor is leaving
 router.post('/checkAndUpdateMentor', (req, res) => {
+    console.log('im here')
     const { title, sessionId } = req.body;    
         const checkSql = 'SELECT mentor FROM codeblock WHERE title = ?';
         db.query(checkSql, title, (err, result) => {
