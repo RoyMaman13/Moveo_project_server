@@ -22,5 +22,5 @@ setupSocket(server);
 
 // Server listen
 server.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
