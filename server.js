@@ -21,6 +21,6 @@ app.use('/', routes); // Use the routes module
 setupSocket(server);
 
 // Server listen
-server.listen(PORT, () => {
+server.listen(PORT, "0.0.0.0", () => {
   console.log(`Server is running on port ${PORT}`);
 });
