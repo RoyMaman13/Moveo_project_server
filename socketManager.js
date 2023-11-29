@@ -28,10 +28,11 @@ function updateMentorToMinusOne(mentorSessionId) {
 function setupSocket(server) {
   const io = socket(server, {
     cors: {
-      origin: 'https://moveoprojectclient-production.up.railway.app/',
+      origin: 'https://moveoprojectclient-production.up.railway.app',
       credentials: true,
     },
   });
+  
 // Handles client connections and disconnections
   io.on('connection', (socket) => {
     console.log('New client connected');
