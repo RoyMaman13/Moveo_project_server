@@ -28,7 +28,7 @@ function updateMentorToMinusOne(mentorSessionId) {
 function setupSocket(server) {
   const io = socket(server, {
     cors: {
-      origin: 'http://localhost:3000',
+      origin: 'https://moveoprojectclient-production.up.railway.app/',
       credentials: true,
     },
   });
