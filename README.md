@@ -30,3 +30,14 @@ The database contains a table named "codeblocks" with these fields:
 When a client connects to the server, a WebSocket using Socket.io is opened, allowing real-time communication between the client and server. This socket establishes the user's session ID, enabling identification and representation of individual users during their interaction with the application.
 
 When a user enters a code block, if the mentor field in the matched codeblock row in database is -1, indicating no mentor, the user becomes the mentor by setting their session ID in that field. If the field isn't -1, the user understands that he is a student. When the mentor leaves, he sets the mentor field back to -1, signaling no mentor currently.
+
+
+
+lastly, the solutions to the codes are :
+'HELLO'
+'WORLD'
+'FROM'
+'ROY'
+'MAMAN'
+
+in that order + they are case sensitive
