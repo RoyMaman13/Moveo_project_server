@@ -1,5 +1,5 @@
 const socket = require('socket.io');
-const db = require('./db');
+const db = require('./db/db');
 
 // Function to update the mentor ID to '-1' in the 'codeblock' table, activated when mentor socket is disconected
 function updateMentorToMinusOne(mentorSessionId) {
