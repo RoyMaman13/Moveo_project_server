@@ -4,10 +4,11 @@ const cors = require('cors');
 const routes = require('./routes'); // Import the routes module
 const bodyParser = require('body-parser');
 const { setupSocket } = require('./socketManager'); // Import the socket manager
+require('dotenv').config();
 
 const app = express();
 const server = http.createServer(app);
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.SERVER_PORT || 5000;
 
 app.use(cors());
 app.use(bodyParser.json());
