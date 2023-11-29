@@ -3,7 +3,7 @@ const http = require('http');
 const cors = require('cors');
 const routes = require('./routes'); // Import the routes module
 const bodyParser = require('body-parser');
-const { setupSocket } = require('./socketManager'); // Import the socket manager
+// const { setupSocket } = require('./socketManager'); // Import the socket manager
 require('dotenv').config();
 
 const app = express();
@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/', routes); // Use the routes module
 
 // Socket.IO setup
-setupSocket(server);
+// setupSocket(server);
 
 // Server listen
 server.listen(PORT, "0.0.0.0", () => {
