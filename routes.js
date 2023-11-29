@@ -83,7 +83,7 @@ router.post('/checkAndUpdateMentor', (req, res) => {
             } else {
                 if (result.length > 0) {
                     const currentMentor = result[0].mentor;
-                    if (currentMentor === sessionId) {
+                    if (currentMentor == sessionId) {
                         const updateSql = 'UPDATE codeblock SET mentor = ? WHERE title = ?';
                         db.query(updateSql, ['-1', title], (updateErr, updateResult) => {
                             if (updateErr) {
